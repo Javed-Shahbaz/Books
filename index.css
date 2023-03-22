@@ -1,7 +1,103 @@
-* {
-  text-align: center;
-}
-
 body {
   background-color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+input {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 1px solid;
+}
+
+@media (min-width: 325px) {
+  .pageTitle,
+  .formTitle,
+  #books {
+    text-align: center;
+  }
+
+  #addBook {
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    background-color: rgb(238, 156, 156);
+  }
+
+  #bookForm {
+    padding: 0;
+    margin: auto;
+  }
+
+  .book-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem 1rem;
+    font-size: large;
+    text-transform: uppercase;
+  }
+
+  #books {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 0.4rem;
+    width: 80%;
+  }
+
+  #books input {
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+  }
+
+  #books button {
+    float: right;
+    height: 3em;
+    width: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    margin-right: 200px;
+  }
+
+  .button {
+    transition: 0.5s ease;
+  }
+
+  .button :hover {
+    background-color: rgb(238, 156, 156);
+    transition: 0.5s ease;
+  }
+}
+
+@media (min-width: 768px) {
+  #addBook,
+  #bookForm {
+    width: 80%;
+  }
+
+  .book-card {
+    margin: 1rem 2rem;
+  }
+
+  #books input {
+    margin: 1rem auto;
+    width: 60%;
+  }
+
+  button[type=submit] {
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
 }
