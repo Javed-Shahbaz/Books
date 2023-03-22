@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -7,7 +8,7 @@ class Book {
   }
 
   storeBook(book) {
-    this.localStorage.setItem('bookData', JSON.stringify(book));
+    localStorage.setItem('bookData', JSON.stringify(book));
   }
 
   getBooks() {
