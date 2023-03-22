@@ -7,7 +7,6 @@ class Book {
   }
 
   storeBook(book) {
-    this.bookData = bookData;
     localStorage.setItem('bookData', JSON.stringify(book));
   }
 
