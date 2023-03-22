@@ -7,7 +7,7 @@
 
   #addBook {
     width: 80%;
-    border: 2px solid #000;
+    border: 1.5px solid #0909094c;
     margin: auto;
     background-color: rgb(238, 156, 156);
   }
@@ -49,6 +49,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     font-weight: bold;
+    margin-right: 200px;
   }
 
   .button :hover {
@@ -67,5 +68,6 @@
 
   #books input {
     margin: 1rem auto;
+    width: 60%;
   }
 }
