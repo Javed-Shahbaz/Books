@@ -7,6 +7,7 @@ class Book {
   }
 
   storeBook(book) {
+    this.bookData = bookData;
     localStorage.setItem('bookData', JSON.stringify(book));
   }
 
@@ -63,7 +64,7 @@ bookForm.addEventListener('submit', (e) => {
   const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
   if (!title || !author) {
-    alert('Please enter a Title and Author first');
+    // alert('Please enter a Title and Author first');
     return;
   }
   const book = new ShowBooks();
