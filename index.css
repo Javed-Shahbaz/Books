@@ -56,8 +56,9 @@
     background-color: rgb(7, 104, 59);
   }
 }
+
 @media (min-width: 768px) {
-  #addBook
+  #addBook,
   #bookForm {
     width: 80%;
   }
