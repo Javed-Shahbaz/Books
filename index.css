@@ -43,16 +43,18 @@
   }
 
   #books button {
-    float: center;
+    float: right;
     height: 3em;
     width: 200px;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     font-weight: bold;
-    
+  }
+
+  .button :hover {
+    background-color: rgb(7, 104, 59);
   }
 }
-
 @media (min-width: 768px) {
   #addBook
   #bookForm {
