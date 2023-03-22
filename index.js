@@ -1,6 +1,3 @@
-/* eslint-disable class-methods-use-this */
-/* eslint-disable max-classes-per-file */
-
 class Book {
   constructor(title, author) {
     this.title = title;
