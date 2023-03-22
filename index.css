@@ -1,3 +1,22 @@
+body {
+  background-color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+input {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 1px solid;
+}
+
 @media (min-width: 325px) {
   .pageTitle,
   .formTitle,
@@ -7,7 +26,7 @@
 
   #addBook {
     width: 80%;
-    border: 1.5px solid #0909094c;
+    padding: 1rem;
     margin: auto;
     background-color: rgb(238, 156, 156);
   }
@@ -52,8 +71,13 @@
     margin-right: 200px;
   }
 
+  .button {
+    transition: .5s ease;
+  }
+
   .button :hover {
-    background-color: rgb(7, 104, 59);
+    background-color: rgb(238, 156, 156);
+    transition: .5s ease;
   }
 }
 
@@ -70,5 +94,10 @@
   #books input {
     margin: 1rem auto;
     width: 60%;
+  }
+
+  button[type=submit] {
+    cursor: pointer;
+    transition: .5s ease;
   }
 }
