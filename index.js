@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -64,7 +63,7 @@ bookForm.addEventListener('submit', (e) => {
   const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
   if (!title || !author) {
-    // alert('Please enter a Title and Author first');
+    alert('Please Enter Title and Author First');
     return;
   }
   const book = new ShowBooks();
