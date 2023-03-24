@@ -1,5 +1,5 @@
 body {
-  font-family:Georgia, 'Times New Roman', Times, serif; 
+  font-family: Georgia, 'Times New Roman', Times, serif; 
   margin: 0;
   padding: 0;
 }
@@ -46,7 +46,7 @@ body {
   padding: 0.5em;
 }
 
-finput[type="radio"]:checked + span {
+input[type="radio"]:checked + span {
   color: rgb(28, 202, 28);
   border-bottom: 2px rgb(28, 202, 28) solid;
 }
