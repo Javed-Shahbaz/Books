@@ -1,32 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWSOME BOOKS</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome Books</title>
+  <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-  <h1 class="pageTitle">All Books</h1>
-
-  <div id="addBook">
-        
-        <div id="container">
-           
-
+  <div class="container">
+    <header class="head">
+      <nav class="buttons">
+        <p class="ntitle">AWESOME BOOKS</p>
+        <div class="navLinks">
+          <label class="nav-label">
+            <input id="listBook" onclick="goList()" class="navbtn">
+            </input>
+            <span>List |</span>
+          </label>
+          <label class="nav-label">
+            <input id="listBook" onclick="goAdd()" class="navbtn">
+            </input>
+            <span>Add Book |</span>
+          </label>
+          <label class="nav-label">
+            <input id="listBook" onclick="goContact()" class="navbtn">
+            </input>
+            <span>Contact</span>
+          </label>
         </div>
+      </nav>
+      <div id="clock" class="clock">
+      <span id="time"></span>
     </div>
-    <section id="bookForm">
-        <h2 class="formTitle">Add New Book</h2>
-        <form id="books">
-            <input id="title" type="text" placeholder="Book Title" required>
-            <br><br><input id="author" type="text" placeholder="Book Author" required>
-            <div class="button">
-             <br><br><button type="submit">Add Book</button>
-            </div>
-        </form>
+    </header>
+   
+    <section id="lisTab" class="lis-tab">
+      <h1>Awesome books</h1>
+      <div class="books-ph" id="book"></div>
     </section>
-    <script src="index.js"></script>
+    <section id="addTab" class="add-tab">
+      <h2>Add New Book</h2>
+      <div class="form">
+        <input class="finput" id="title" type="text" placeholder="Book Title" />
+        <input class="finput" id="author" type="text" placeholder="Author" />
+        <button class="adbtn" id="addBtn" type="button" onclick="getInputValues()">Add Book</button>
+      </div>
+    </section>
+    <section id="cTab" class="cont-tab">
+      <h2 class="cont-title">Contact Information</h2>
+      <span class="cont-helo">Do you have any questions or you just want to say "Hello"?<br> you can reach out to
+        us!</span>
+      <ul>
+        <li class="clist-item">E-mail at: jsmail@gmail.com</li>
+        <li class="clist-item">Phone Number: 009230012345</li>
+        <li class="clist-item">Address: Street 22, 8503 New York, USA</li>
+      </ul>
+    </section>
+
+    <footer class="footNote">
+      <p>Copyright:  2023@JS</p>
+    </footer>
+  </div>
+  <script type="module" src="index.js"></script>
 </body>
+
 </html>

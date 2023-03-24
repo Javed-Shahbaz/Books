@@ -1,103 +1,176 @@
 body {
-  background-color: whitesmoke;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:Georgia, 'Times New Roman', Times, serif; 
+  margin: 0;
+  padding: 0;
 }
 
-::placeholder {
-  font-style: italic;
-  font-size: 1rem;
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 97vh;
+  padding: 0.7rem;
+  background-color: rgb(244, 244, 67);
 }
 
-input {
-  outline: none;
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  border: 3px solid black;
 }
 
-button:hover {
-  cursor: pointer;
-  border: 1px solid;
+.ntitle {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
-@media (min-width: 325px) {
-  .pageTitle,
-  .formTitle,
-  #books {
-    text-align: center;
-  }
-
-  #addBook {
-    width: 80%;
-    padding: 1rem;
-    margin: auto;
-    background-color: rgb(238, 156, 156);
-  }
-
-  #bookForm {
-    padding: 0;
-    margin: auto;
-  }
-
-  .book-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0.5rem 1rem;
-    font-size: large;
-    text-transform: uppercase;
-  }
-
-  #books {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    gap: 0.4rem;
-    width: 80%;
-  }
-
-  #books input {
-    width: 100%;
-    height: 3em;
-    text-align: center;
-    font-size: large;
-    font-weight: 500;
-  }
-
-  #books button {
-    float: right;
-    height: 3em;
-    width: 200px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    font-weight: bold;
-    margin-right: 200px;
-  }
-
-  .button {
-    transition: 0.5s ease;
-  }
-
-  .button :hover {
-    background-color: rgb(238, 156, 156);
-    transition: 0.5s ease;
-  }
+.navLinks {
+  display: flex;
+  align-items: center;
+  max-height: 2rem;
+  gap: 0.5em;
 }
 
-@media (min-width: 768px) {
-  #addBook,
-  #bookForm {
-    width: 80%;
-  }
+.navbtn {
+  display: none;
+}
 
-  .book-card {
-    margin: 1rem 2rem;
-  }
+.nav-label {
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  padding: 0.5em;
+}
 
-  #books input {
-    margin: 1rem auto;
-    width: 60%;
-  }
+finput[type="radio"]:checked + span {
+  color: rgb(28, 202, 28);
+  border-bottom: 2px rgb(28, 202, 28) solid;
+}
 
-  button[type=submit] {
-    cursor: pointer;
-    transition: 0.5s ease;
-  }
+.clock {
+  font-weight: 600;
+  line-height: 3em;
+  text-align: right;
+  font-size: 1.5em;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+}
+
+.lis-tab {
+  display: none;
+}
+
+.add-tab {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+
+.books-ph {
+  max-width: 80%;
+  max-height: 50vh;
+  overflow-y: scroll;
+  border: 3px solid black;
+  margin: 3% auto;
+}
+
+.books-ph::-webkit-scrollbar {
+  display: none;
+}
+
+.book-container {
+  display: flex;
+  padding: 0.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-container:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.book-title {
+  padding-left: 1%;
+  font-weight: 700;
+  line-height: 2.2rem;
+  margin: 0;
+}
+
+.remove-btn {
+  font-weight: 700;
+  font-size: 1.08rem;
+  height: 2em;
+  border: 2px solid black;
+  background-color: rgb(10, 215, 136);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 65%;
+  gap: 2em;
+  margin: auto;
+}
+
+.finput {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 0.4rem;
+  font-size: 1.5em;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.adbtn {
+  width: 6em;
+  align-self: end;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 0.3rem;
+  background-color: rgb(10, 215, 136);
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.cont-tab {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.cont-helo,
+.clist-item {
+  font-size: 1.06rem;
+  font-weight: 700;
+}
+
+.clist-item {
+  text-align: left;
+}
+
+.footNote {
+  margin-top: auto;
+  display: flex;
+  bottom: 0.7rem;
+  padding: 0.5rem 2rem;
+  border: 0.2em solid black;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 0.8rem;
 }
