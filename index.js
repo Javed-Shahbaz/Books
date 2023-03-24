@@ -4,9 +4,9 @@ import removeBook from './modules/remove-book.js';
 import localStorageOnLoad from './modules/localstorage-onload.js';
 import { DateTime } from './modules/luxon.js';
 
-const ct = DateTime.now();
+const now = DateTime.now();
 const clock = document.getElementById('time');
-clock.innerHTML = ct.toLocaleString(DateTime.DATETIME_MED);
+clock.innerHTML = now.toLocaleString(DateTime.DATETIME_MED);
 
 window.getInputValues = getInputValues;
 window.goAdd = goAdd;
